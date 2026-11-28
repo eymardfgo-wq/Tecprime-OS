@@ -1,4 +1,4 @@
-const CACHE_NAME='tecprime-os-shell-v9';
+const CACHE_NAME='tecprime-os-shell-v10';
 const BASE='/Tecprime-OS/';
 const SHELL=[BASE,BASE+'index.html',BASE+'manifest.webmanifest',BASE+'icons/tecprime-icon-192.png',BASE+'icons/tecprime-icon-512.png',BASE+'icons/tecprime-icon.svg'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE_NAME).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting()));});
